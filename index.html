@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="sw" data-lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#060A1E">
+  <meta name="description" content="Freemasonry ni nini, je inatoa utajiri, sheria zake na jinsi ya kujiunga. / What Freemasonry is, whether it gives wealth, its rules and how to join.">
+  <title>Freemasonry: ni nini, utajiri, sheria na kujiunga</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Sora:wght@600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Language switch (always on top) -->
+  <div class="lang" role="group" aria-label="Chagua lugha / Choose language">
+    <button type="button" data-lang="sw" aria-pressed="true">Kiswahili</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+
+  <main>
+
+    <!-- Layer 0: animated logo -->
+    <section class="layer l0 splash current" aria-label="Freemasonry">
+      <div class="scroll splash-center">
+        <svg class="mark" viewBox="0 0 240 240" role="img" aria-label="Square na Compasses / Square and Compasses">
+          <defs>
+            <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="20" y1="20" x2="220" y2="220">
+              <stop offset="0" stop-color="#FFE08A"/>
+              <stop offset=".55" stop-color="#F2B93B"/>
+              <stop offset="1" stop-color="#C98A12"/>
+            </linearGradient>
+          </defs>
+          <!-- 1. Square: the V at the bottom -->
+          <path class="sq" pathLength="1" d="M26 118 L120 212 L214 118" fill="none" stroke="url(#gold)" stroke-width="14" stroke-linejoin="miter"/>
+          <!-- 2. Compasses: the ^ at the top -->
+          <circle class="hinge" cx="120" cy="36" r="10" fill="#060A1E" stroke="url(#gold)" stroke-width="5"/>
+          <path class="leg" pathLength="1" d="M120 36 L54 198" fill="none" stroke="url(#gold)" stroke-width="9"/>
+          <path class="leg" pathLength="1" d="M120 36 L186 198" fill="none" stroke="url(#gold)" stroke-width="9"/>
+          <!-- 3. The G in the middle -->
+          <text class="g" x="120" y="146" text-anchor="middle" font-family="Sora, Georgia, serif" font-size="56" font-weight="700" fill="url(#gold)">G</text>
+        </svg>
+        <!-- 4. The name -->
+        <p class="brand" tabindex="-1" data-focus>Freemasonry</p>
+        <p class="fine splash-fine">
+          <span class="sw">Tovuti ya elimu. Si tovuti rasmi ya Grand Lodge yoyote.</span>
+          <span class="en">An educational website. Not the official website of any Grand Lodge.</span>
+        </p>
+      </div>
+      <div class="bar">
+        <p class="hint"><span class="sw">Gusa skrini kuruka</span><span class="en">Tap to skip</span></p>
+        <div class="bar-inner">
+          <button class="btn primary enter" type="button" data-go="next"><span class="sw">Ingia</span><span class="en">Enter</span></button>
+        </div>
+        <p class="copy">&copy; 2026 Freemason</p>
+      </div>
+    </section>
+
+    <!-- Layer 1: What is Freemasonry -->
+    <section class="layer l1" aria-labelledby="t1">
+      <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+      <div class="scroll">
+        <div class="wrap">
+          <h2 id="t1" tabindex="-1" data-focus>
+            <span class="sw">Freemasonry ni nini?</span>
+            <span class="en">What is Freemasonry?</span>
+          </h2>
+          <p class="lead">
+            <span class="sw">Freemasonry ni udugu wa kimataifa wa wanaume unaofundisha maadili, urafiki na kuisaidia jamii. Asili yake ni vyama vya mafundi wa mawe wa Ulaya ya zama za kati, na Grand Lodge ya kwanza ilianzishwa London mwaka 1717.</span>
+            <span class="en">Freemasonry is an international fraternity that teaches morals, friendship and service to the community. It grew out of the guilds of stonemasons in medieval Europe, and the first Grand Lodge was founded in London in 1717.</span>
+          </p>
+          <dl class="terms">
+            <dt><span class="sw">Wanakutana wapi?</span><span class="en">Where do they meet?</span></dt>
+            <dd><span class="sw">Kwenye &ldquo;lodge&rdquo;, yaani kikundi cha eneo fulani kinachokutana mara kwa mara.</span><span class="en">In a &ldquo;lodge&rdquo;, a local group that meets regularly.</span></dd>
+
+            <dt><span class="sw">Wanafanya nini?</span><span class="en">What do they do?</span></dt>
+            <dd><span class="sw">Hufanya ibada za kiishara zinazotumia zana za mafundi wa mawe, kama kipimo cha pembe na bikari, kufundisha maadili. Pia huchangia kazi za hisani.</span><span class="en">They perform symbolic ceremonies that use stonemasons&rsquo; tools, like the square and compasses, to teach moral lessons. They also raise money for charity.</span></dd>
+
+            <dt><span class="sw">Je, ni dini?</span><span class="en">Is it a religion?</span></dt>
+            <dd><span class="sw">Hapana. Haichukui nafasi ya imani yako, ila mwanachama anatakiwa kuamini Kiumbe Mkuu. Siasa na mabishano ya dini hayaruhusiwi kwenye mikutano yao.</span><span class="en">No. It does not replace your faith, but members are expected to believe in a Supreme Being. Politics and religious arguments are not allowed at lodge meetings.</span></dd>
+
+            <dt><span class="sw">Je, ni siri?</span><span class="en">Is it secret?</span></dt>
+            <dd><span class="sw">Uwepo wao si siri. Kinachobaki faragha ni mila na ishara za ndani za ibada zao.</span><span class="en">Its existence is not. What stays private are the inner customs and signs of its ceremonies.</span></dd>
+
+            <dt><span class="sw">Alama yao</span><span class="en">The symbol</span></dt>
+            <dd><span class="sw">Kipimo cha pembe (Square) na bikari (Compasses), mara nyingi na herufi G katikati. G inasimama kwa &ldquo;God&rdquo; (Mungu) au &ldquo;Geometry&rdquo; (jiometri).</span><span class="en">The Square and Compasses, often with a G in the middle. The G stands for &ldquo;God&rdquo; or &ldquo;Geometry&rdquo;.</span></dd>
+
+            <dt><span class="sw">Digrii</span><span class="en">Degrees</span></dt>
+            <dd><span class="sw">Mwanachama hupanda ngazi tatu: Entered Apprentice, Fellow Craft na Master Mason.</span><span class="en">Members progress through three degrees: Entered Apprentice, Fellow Craft and Master Mason.</span></dd>
+          </dl>
+          <p class="fine">
+            <span class="sw">Tovuti ya elimu. Si tovuti rasmi ya Grand Lodge yoyote.</span>
+            <span class="en">An educational website. Not the official website of any Grand Lodge.</span>
+          </p>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="bar-inner">
+          <button class="btn ghost" type="button" data-go="prev"><span class="sw">Rudi</span><span class="en">Back</span></button>
+          <button class="btn primary" type="button" data-go="next"><span class="sw">Endelea</span><span class="en">Continue</span></button>
+        </div>
+        <p class="copy">&copy; 2026 Freemason</p>
+      </div>
+    </section>
+
+    <!-- Layer 2: Wealth -->
+    <section class="layer l2" aria-labelledby="t2">
+      <div class="dots" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i></div>
+      <div class="scroll">
+        <div class="wrap">
+          <h2 id="t2" class="q" tabindex="-1" data-focus>
+            <span class="sw">Je, Freemasonry inatoa utajiri?</span>
+            <span class="en">Does Freemasonry give you wealth?</span>
+          </h2>
+          <p class="verdict"><span class="sw">Hapana.</span><span class="en">No.</span></p>
+          <p class="lead">
+            <span class="sw">Freemasonry haitoi pesa, kazi, mikopo wala cheo kwa wanachama wake, na hakuna ushahidi kwamba imewahi kufanya hivyo.</span>
+            <span class="en">Freemasonry does not give members money, jobs, loans or rank, and there is no evidence that it ever has.</span>
+          </p>
+          <ul class="dash">
+            <li><span class="sw">Wanachama ndio wanaolipa: ada ya kuingia, ada ya kila mwaka na michango ya hisani.</span><span class="en">Members are the ones who pay: an initiation fee, yearly dues and charity donations.</span></li>
+            <li><span class="sw">Mafundisho yao yanamtaka mgombea ajiunge bila kutegemea faida ya kifedha.</span><span class="en">Its teachings expect a candidate to join without hoping for financial gain.</span></li>
+            <li><span class="sw">Mtu anaweza kupata marafiki na marafiki wa kikazi, lakini hiyo si ahadi ya utajiri.</span><span class="en">Members can make friends and useful contacts, but that is not a promise of riches.</span></li>
+          </ul>
+          <aside class="alert">
+            <h3><span class="sw">Jihadhari na utapeli</span><span class="en">Beware of scams</span></h3>
+            <p><span class="sw">Baadhi ya matapeli hutumia jina la Freemasonry kuiba pesa. Ishara za kuangalia:</span><span class="en">Some scammers use the name Freemasonry to steal money. Warning signs:</span></p>
+            <ul class="dash">
+              <li><span class="sw">Ahadi ya utajiri wa haraka.</span><span class="en">A promise of fast wealth.</span></li>
+              <li><span class="sw">Kuombwa pesa za simu au benki ili &ldquo;uunganishwe&rdquo; na Freemasons.</span><span class="en">Being asked to send mobile money or bank transfers to be &ldquo;connected&rdquo; to the Freemasons.</span></li>
+              <li><span class="sw">Kuambiwa ufanye kafara au tambiko ili upate mali.</span><span class="en">Being told to perform a sacrifice or ritual to get rich.</span></li>
+            </ul>
+            <p><strong><span class="sw">Usitume pesa kwa mtu yeyote anayeahidi njia ya mkato ya kuingia.</span><span class="en">Never send money to anyone who promises a shortcut into the society.</span></strong></p>
+          </aside>
+          <p class="fine">
+            <span class="sw">Tovuti ya elimu. Si tovuti rasmi ya Grand Lodge yoyote.</span>
+            <span class="en">An educational website. Not the official website of any Grand Lodge.</span>
+          </p>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="bar-inner">
+          <button class="btn ghost" type="button" data-go="prev"><span class="sw">Rudi</span><span class="en">Back</span></button>
+          <button class="btn primary" type="button" data-go="next"><span class="sw">Endelea</span><span class="en">Continue</span></button>
+        </div>
+        <p class="copy">&copy; 2026 Freemason</p>
+      </div>
+    </section>
+
+    <!-- Layer 3: Rules -->
+    <section class="layer l3" aria-labelledby="t3">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i></div>
+      <div class="scroll">
+        <div class="wrap">
+          <h2 id="t3" tabindex="-1" data-focus>
+            <span class="sw">Sheria zake</span>
+            <span class="en">Its rules</span>
+          </h2>
+          <p class="lead">
+            <span class="sw">Kila Grand Lodge ina katiba yake, kwa hiyo sheria hutofautiana kidogo kati ya nchi na nchi. Hizi ndizo kanuni zinazojulikana zaidi:</span>
+            <span class="en">Every Grand Lodge has its own constitution, so rules differ a little from country to country. These are the best-known principles:</span>
+          </p>
+          <ul class="dash">
+            <li><span class="sw">Kuamini Kiumbe Mkuu, kwa dini yoyote.</span><span class="en">Belief in a Supreme Being, of any religion.</span></li>
+            <li><span class="sw">Kuwa mtu mzima mwenye tabia njema anayejiunga kwa hiari yake mwenyewe.</span><span class="en">Being an adult of good character who joins of your own free will.</span></li>
+            <li><span class="sw">Kutii sheria za nchi.</span><span class="en">Obeying the laws of your country.</span></li>
+            <li><span class="sw">Kutojadili siasa wala kubishana kuhusu dini kwenye mikutano ya lodge.</span><span class="en">No politics and no religious arguments in lodge meetings.</span></li>
+            <li><span class="sw">Kutunza siri za ndani za ibada. Hizi ni mila na ishara, si taarifa za kuficha uhalifu.</span><span class="en">Keeping the inner customs of the ceremonies private. These are customs and signs, not information for hiding crimes.</span></li>
+            <li><span class="sw">Kuishi kwa upendo wa kidugu, kusaidia wenye shida na kusema ukweli.</span><span class="en">Living by brotherly love, relief for those in need, and truth.</span></li>
+            <li><span class="sw">Kwa mujibu wa mafundisho yao, wajibu kwa Mungu, nchi na familia hutangulia.</span><span class="en">By their own teaching, duty to God, country and family comes first.</span></li>
+          </ul>
+          <p class="note">
+            <span class="sw">Freemasonry ya kawaida ni ya wanaume. Zipo lodge chache za wanawake na za pamoja, zinazoendeshwa na mashirika tofauti.</span>
+            <span class="en">Regular Freemasonry is for men. A few lodges for women, and mixed lodges, exist under separate organisations.</span>
+          </p>
+          <p class="fine">
+            <span class="sw">Tovuti ya elimu. Si tovuti rasmi ya Grand Lodge yoyote.</span>
+            <span class="en">An educational website. Not the official website of any Grand Lodge.</span>
+          </p>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="bar-inner">
+          <button class="btn ghost" type="button" data-go="prev"><span class="sw">Rudi</span><span class="en">Back</span></button>
+          <button class="btn primary" type="button" data-go="next"><span class="sw">Endelea</span><span class="en">Continue</span></button>
+        </div>
+        <p class="copy">&copy; 2026 Freemason</p>
+      </div>
+    </section>
+
+    <!-- Layer 4: How to join -->
+    <section class="layer l4" aria-labelledby="t4">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i></div>
+      <div class="scroll">
+        <div class="wrap">
+          <h2 id="t4" tabindex="-1" data-focus>
+            <span class="sw">Jinsi ya kujiunga</span>
+            <span class="en">How to join</span>
+          </h2>
+          <p class="lead">
+            <span class="sw">Kwa kawaida Freemasons hawatafuti wanachama kwa kuwashawishi watu. Mtu huomba mwenyewe, kwa hiari yake.</span>
+            <span class="en">Freemasons usually do not recruit by persuading people. A person asks to join of their own free will.</span>
+          </p>
+          <ol class="steps">
+            <li>
+              <strong><span class="sw">Tafuta lodge halali.</span><span class="en">Find a genuine lodge.</span></strong>
+              <span class="sw">Tafuta Grand Lodge ya nchi yako kupitia tovuti yao rasmi. Njia moja ya kuthibitisha ni kuangalia kama inatambuliwa na United Grand Lodge of England.</span>
+              <span class="en">Look for the Grand Lodge of your country through its official website. One way to check is whether it is recognised by the United Grand Lodge of England.</span>
+            </li>
+            <li>
+              <strong><span class="sw">Hakikisha unakidhi mahitaji ya msingi.</span><span class="en">Check the basic requirements.</span></strong>
+              <span class="sw">Mwanamume, mwenye umri wa chini unaotakiwa (mara nyingi miaka 18 hadi 21), anayeamini Kiumbe Mkuu na mwenye tabia njema.</span>
+              <span class="en">A man above the minimum age (often 18 to 21) who believes in a Supreme Being and has good character.</span>
+            </li>
+            <li>
+              <strong><span class="sw">Wasiliana nao.</span><span class="en">Get in touch.</span></strong>
+              <span class="sw">Wasiliana na lodge, au mwombe mwanachama unayemfahamu akupendekeze. Unaweza kualikwa kwenye mazungumzo au tukio la kijamii kwanza.</span>
+              <span class="en">Contact the lodge, or ask a member you know to propose you. You may be invited to a conversation or a social event first.</span>
+            </li>
+            <li>
+              <strong><span class="sw">Subiri uchunguzi na kura.</span><span class="en">Wait for the review and vote.</span></strong>
+              <span class="sw">Wanachama huangalia wasifu wako, kisha hupiga kura ya kukukubali au kutokukubali.</span>
+              <span class="en">Members look into your background, then vote on whether to accept you.</span>
+            </li>
+            <li>
+              <strong><span class="sw">Sherehe ya kuingizwa.</span><span class="en">The initiation.</span></strong>
+              <span class="sw">Ukikubaliwa, unakaribishwa rasmi kama mwanachama wa digrii ya kwanza.</span>
+              <span class="en">If accepted, you are formally welcomed as a member of the first degree.</span>
+            </li>
+          </ol>
+          <aside class="alert">
+            <h3><span class="sw">Gharama na uhuru</span><span class="en">Cost and freedom</span></h3>
+            <p>
+              <span class="sw">Ada hutofautiana kwa kila lodge. Lipa kupitia lodge yenyewe pekee, kamwe si kwa mtu binafsi anayeahidi njia ya mkato. Mwanachama anaweza kujiuzulu wakati wowote.</span>
+              <span class="en">Fees vary by lodge. Pay only through the lodge itself, never to an individual offering a shortcut. A member can resign at any time.</span>
+            </p>
+          </aside>
+          <p class="fine">
+            <span class="sw">Tovuti ya elimu. Si tovuti rasmi ya Grand Lodge yoyote.</span>
+            <span class="en">An educational website. Not the official website of any Grand Lodge.</span>
+          </p>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="bar-inner">
+          <button class="btn ghost" type="button" data-go="prev"><span class="sw">Rudi</span><span class="en">Back</span></button>
+          <button class="btn primary" type="button" data-go="restart"><span class="sw">Rudi mwanzo</span><span class="en">Back to start</span></button>
+        </div>
+        <p class="copy">&copy; 2026 Freemason</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
